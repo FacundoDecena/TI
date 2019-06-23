@@ -1,20 +1,5 @@
 <template>
-    <div>
-        <table>
-            <tr>
-                <td>
-                    <ul>
-                        <li>
-                            <div class="loader"></div>
-                        </li>
-                        <li>
-                            El archivo esta siendo decodificado sin corregir errores
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </div>
+    <div class="loader"></div>
 </template>
 
 <script>
@@ -33,27 +18,6 @@
         padding: 8px;
         margin: 0;
     }
-    a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid #000000;
-        border-radius: 8px;
-        padding: 4px;
-        width: 100%;
-        height: 100%;
-        background-color: #A3EB6A;
-    }
-
-    a:hover {
-        border: 2px solid #00ff00;
-        background-color: #00bb00;
-    }
-
-    a:active {
-        border: 2px solid #000000;
-        background-color: #00ff00;
-    }
 
     .loader {
         border: 16px solid #f3f3f3;
@@ -62,7 +26,7 @@
         width: 120px;
         height: 120px;
         animation: spin 2s linear infinite;
-        margin: 0 auto;
+        margin-left: 350px;
     }
 
     @keyframes spin {

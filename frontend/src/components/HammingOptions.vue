@@ -5,7 +5,11 @@
                 <td>
                     <ul>
                         <li>
-                            <a> Hamming 7</a>
+                            <a
+                                    @click="doHamming7"
+                            >
+                                Hamming 7
+                            </a>
                         </li>
                         <li>
                             <a> Hamming 32</a>
@@ -24,8 +28,14 @@
 </template>
 
 <script>
+    //import App from "../App"
     export default {
-        name: "HammingOptions"
+        name: "HammingOptions",
+        methods: {
+            doHamming7(){
+                window.backend.preHamming(7, "test.txt")
+            }
+        }
     }
 </script>
 

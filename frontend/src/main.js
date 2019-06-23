@@ -4,10 +4,10 @@ import App from "./App.vue";
 Vue.config.productionTip = false;
 Vue.config.devtools = true;
 
-// import Bridge from "./wailsbridge";
+ import Bridge from "./wailsbridge";
 
-// Bridge.Start(() => {
+ Bridge.Start(() => {
   new Vue({
     render: h => h(App)
   }).$mount("#app");
-// });
+ });
